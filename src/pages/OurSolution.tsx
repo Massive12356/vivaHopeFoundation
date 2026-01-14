@@ -14,16 +14,16 @@ import {
   Laptop,
 } from "lucide-react";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
-import maternalDonation from "../images/maternalDonation.jpeg";
-import reproHealth from "../images/24.jpeg";
-import anemiaDonation from "../images/AnemiaDonation.jpeg";
-import diseaseSupport from "../images/diseaseSupport.jpeg";
-import elderlyScreening from "../images/elderlyScreening.jpeg";
+import feed1 from "../images/feed1.jpg";
+import hero from "../images/hero.jpg";
+import feed3 from "../images/feed3.jpg";
+import pic7 from "../images/pic7.jpg";
+import feed7 from "../images/feed7.jpg";
 
-import anaeProgram from "../images/32.jpeg";
-import orphaDonation from "../images/hero1.webp";
-import northDonation from "../images/30.jpeg";
-import orphaDonation1 from "../images/35.jpeg";
+import washroomInfra from "../images/washroomInfra.jpg";
+import orphaDonation from "../images/hero1.jpg";
+import feed4 from "../images/feed4.jpg";
+import whatWeDo from "../images/whatWeDo.jpg";
 import nasikaImage from "../images/Nasika.jpeg";
 
 const OurProjects: React.FC = () => {
@@ -34,7 +34,7 @@ const OurProjects: React.FC = () => {
       description:
         "We built a sanitary kitchen and student cafeteria at Alogboshie Basic School where children can eat hot, nutritious meals in a dignified setting. This initiative addresses the critical issue that children cannot absorb knowledge on an empty stomach.",
       regions: "Alogboshie, Ghana",
-      image: maternalDonation,
+      image: feed1,
     },
     {
       icon: Building,
@@ -42,7 +42,7 @@ const OurProjects: React.FC = () => {
       description:
         "We constructed dedicated restroom blocks and a teachers' office at Alogboshie Basic School. This initiative restores privacy and hygiene for students while providing teachers with a dedicated workspace for lesson planning and grading.",
       regions: "Alogboshie, Ghana",
-      image: elderlyScreening,
+      image: feed7,
     },
     {
       icon: Laptop,
@@ -50,7 +50,7 @@ const OurProjects: React.FC = () => {
       description:
         "We established a fully equipped computer lab with desktops and internet access at Alogboshie Basic School. This initiative gives students essential technical skills for the future and bridges the digital divide.",
       regions: "Alogboshie, Ghana",
-      image: anemiaDonation,
+      image: feed3,
     },
     {
       icon: BookOpen,
@@ -58,7 +58,7 @@ const OurProjects: React.FC = () => {
       description:
         "We provided exercise books, pens, pencils, and nap mats to students at Alogboshie Basic School. This ensures children can focus on learning instead of missing resources.",
       regions: "Alogboshie, Ghana",
-      image: orphaDonation1,
+      image: whatWeDo,
     },
     {
       icon: GraduationCap,
@@ -66,7 +66,7 @@ const OurProjects: React.FC = () => {
       description:
         "We provided school uniforms for every student and proper shoes to foster equality and school pride. This initiative encourages participation in extracurricular activities like soccer, building confidence and a sense of belonging.",
       regions: "Alogboshie, Ghana",
-      image: northDonation,
+      image: feed4,
     },
     {
       icon: Users,
@@ -74,7 +74,7 @@ const OurProjects: React.FC = () => {
       description:
         "In partnership with VivaLoks, we fed thousand children and donated textbooks, exercise books, pens, and pencils. This collaboration demonstrates the power of partnership in creating lasting impact.",
       regions: "Alogboshie, Ghana",
-      image: diseaseSupport,
+      image: pic7,
     },
     {
       icon: Heart,
@@ -82,7 +82,7 @@ const OurProjects: React.FC = () => {
       description:
         "We launched in December 2025 with donations of food and school supplies to Alogboshie Basic School, including cultural performances, music, and a student talent showcase. This celebration brought the community together.",
       regions: "Alogboshie, Ghana",
-      image: reproHealth,
+      image: hero,
     },
     {
       icon: Utensils,
@@ -98,7 +98,7 @@ const OurProjects: React.FC = () => {
       description:
         "We identified and addressed critical infrastructure needs including bathrooms, kitchen, teachers' office, computer lab, uniforms, and footwear. This comprehensive approach ensures a complete learning environment.",
       regions: "Alogboshie, Ghana",
-      image: anaeProgram,
+      image: washroomInfra,
     },
   ];
 
@@ -124,7 +124,7 @@ const OurProjects: React.FC = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-              Our Educational <span className="text-[#987543]">Programs</span>
+              Our Educational <span className="text-primary-600">Programs</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               Discover the educational initiatives we've implemented to improve
@@ -140,7 +140,7 @@ const OurProjects: React.FC = () => {
         <section className="py-20 bg-white dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Completed Programs
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -168,10 +168,10 @@ const OurProjects: React.FC = () => {
 
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="flex items-start space-x-3 mb-4">
-                      <div className="bg-primary-100 dark:bg-primary-900 p-3 rounded-xl flex-shrink-0">
-                        <project.icon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                      <div className="bg-secondary-100 dark:bg-secondary-900 p-3 rounded-xl flex-shrink-0">
+                        <project.icon className="w-6 h-6 text-secondary-600 dark:text-secondary-400" />
                       </div>
-                      <h3 className="text-lg font-semibold text-[#987543]">
+                      <h3 className="text-lg font-semibold text-primary-500">
                         {project.title}
                       </h3>
                     </div>
@@ -194,7 +194,7 @@ const OurProjects: React.FC = () => {
         <section className="py-20 bg-gray-50 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Upcoming Programs
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -229,12 +229,12 @@ const OurProjects: React.FC = () => {
                 >
                   <div className="flex items-start space-x-4">
                     <div className="bg-secondary-100 dark:bg-secondary-900 p-3 rounded-xl flex-shrink-0">
-                      <project.icon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                      <project.icon className="w-6 h-6 text-secondary-600 dark:text-secondary-400" />
                     </div>
                     <div>
                       <div className="flex items-center  mb-2">
-                        <Calendar className="w-4 h-4 mr-2 text-[#987543]" />
-                        <span className="font-medium text-[#987543]">
+                        <Calendar className="w-4 h-4 mr-2 text-primary-500" />
+                        <span className="font-medium text-primary-500">
                           {project.date}
                         </span>
                       </div>
@@ -258,7 +258,7 @@ const OurProjects: React.FC = () => {
         <section className="py-20 bg-white dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543]  mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600  mb-4">
                 Our Reach
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -291,9 +291,9 @@ const OurProjects: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="text-center p-3 bg-primary-50 dark:bg-primary-900/20 rounded-lg"
+                    className="text-center p-3 bg-secondary-50 dark:bg-secondary-900/20 rounded-lg"
                   >
-                    <MapPin className="w-5 h-5 text-primary-600 dark:text-primary-400 mx-auto mb-1" />
+                    <MapPin className="w-5 h-5 text-secondary-600 dark:text-secondary-400 mx-auto mb-1" />
                     <div className="text-sm font-medium text-gray-900 dark:text-white">
                       {region}
                     </div>
@@ -316,7 +316,7 @@ const OurProjects: React.FC = () => {
         <section className="py-20 bg-gray-50 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Our Partnerships
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -326,11 +326,11 @@ const OurProjects: React.FC = () => {
 
             <div className="bg-white dark:bg-neutral-800 rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
               <div className="flex items-center justify-center mb-6">
-                <div className="bg-primary-100 dark:bg-primary-900 p-4 rounded-xl">
-                  <Heart className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+                <div className="bg-secondary-100 dark:bg-secondary-900 p-4 rounded-xl">
+                  <Heart className="w-8 h-8 text-secondary-600 dark:text-secondary-400" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-center text-[#987543] mb-4">
+              <h3 className="text-2xl font-bold text-center text-primary-600 mb-4">
                 Partnership with TBL Kids Ministries
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
@@ -339,8 +339,8 @@ const OurProjects: React.FC = () => {
               </p>
               <div className="text-center">
                 <div className="inline-flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
-                  <Calendar className="w-4 h-4 text-[#987543]" />
-                  <span className="text-[#987543]">Ongoing Partnership</span>
+                  <Calendar className="w-4 h-4 text-primary-500" />
+                  <span className="text-primary-500">Ongoing Partnership</span>
                 </div>
               </div>
             </div>

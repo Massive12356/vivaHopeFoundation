@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { Users, Award, Globe, Heart, Download, BookOpen, GraduationCap, Utensils, Building, Laptop } from "lucide-react";
 import { Button } from "../components/Button";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
-import screening from "../images/elderlyScreening.jpeg";
-import maternalDonation from "../images/maternalDonation.jpeg";
+import feed2 from "../images/feed2.jpg";
+import feed1 from "../images/feed1.jpg";
 import { Link } from "react-router-dom";
 import document1 from "../images/Appreciation .pdf";
 import document2 from "../images/DOC-20240705-WA0064_251027_121401.pdf";
@@ -38,7 +38,7 @@ const OurImpact: React.FC = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               Measuring Our{' '}
-              <span className="text-[#987543]">Educational Impact</span>
+              <span className="text-primary-600">Educational Impact</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               Real results from our educational initiatives across communities.
@@ -88,13 +88,13 @@ const OurImpact: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="text-center bg-white dark:bg-neutral-900 rounded-2xl p-8 shadow-lg"
                 >
-                  <div className="bg-primary-100 dark:bg-primary-900 p-4 rounded-xl w-fit mx-auto mb-4">
-                    <metric.icon className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+                  <div className="bg-secondary-100 dark:bg-secondary-900 p-4 rounded-xl w-fit mx-auto mb-4">
+                    <metric.icon className="w-8 h-8 text-secondary-600 dark:text-secondary-400" />
                   </div>
                   <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
                     {metric.number}
                   </div>
-                  <div className="text-lg font-semibold text-[#987543] mb-2">
+                  <div className="text-lg font-semibold text-primary-500 mb-2">
                     {metric.label}
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
@@ -114,7 +114,7 @@ const OurImpact: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Stories of{' '}
-                <span className="text-[#987543]">Transformation</span>{' '}
+                <span className="text-primary-600">Transformation</span>{' '}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 Real stories from the communities we've served with educational
@@ -129,7 +129,7 @@ const OurImpact: React.FC = () => {
                   location: "Alogboshie Basic School, Ghana",
                   story:
                     "Through our Feed to Lead program, we built a sanitary kitchen and student cafeteria where children can eat hot, nutritious meals in a dignified setting. Children who previously went hungry during school hours can now focus on learning.",
-                  image: maternalDonation,
+                  image: feed1,
                   impact: [
                     "Children no longer hungry during class",
                     "Improved concentration and learning",
@@ -142,7 +142,7 @@ const OurImpact: React.FC = () => {
                   location: "Alogboshie Basic School, Ghana",
                   story:
                     "Our Project Dignity initiative constructed dedicated restroom blocks and a teachers' office at Alogboshie Basic School. Students now have access to proper sanitation facilities and teachers have a dedicated workspace for lesson planning.",
-                  image: screening,
+                  image: feed2,
                   impact: [
                     "Improved sanitation for students",
                     "Dedicated workspace for teachers",
@@ -160,7 +160,7 @@ const OurImpact: React.FC = () => {
                 >
                   <img
                     src={story.image}
-                    alt={`${story.title} - healthcare workers serving patients in ${story.location}`}
+                    alt={`${story.title} - Sponsors workers donating to students in ${story.location}`}
                     className="w-full h-64 object-cover"
                     width="600"
                     height="256"
@@ -169,14 +169,14 @@ const OurImpact: React.FC = () => {
                     <div className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">
                       {story.location}
                     </div>
-                    <h3 className="text-2xl font-bold  text-[#987543] mb-4">
+                    <h3 className="text-2xl font-bold  text-primary-500 mb-4">
                       {story.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                       {story.story}
                     </p>
                     <div className="space-y-2">
-                      <div className="font-semibold text-[#987543] mb-2">
+                      <div className="font-semibold text-primary-500 mb-2">
                         Key Impact:
                       </div>
                       {story.impact.map((item, impactIndex) => (
@@ -203,7 +203,7 @@ const OurImpact: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Testimonials and <span className="text-[#987543]">Feedback</span>
+                Testimonials and <span className="text-primary-600">Feedback</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 Recognition and testimonials from our partners and communities.
@@ -258,7 +258,7 @@ const OurImpact: React.FC = () => {
                   className="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-lg flex flex-col h-full"
                 >
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-[#987543] mb-3">
+                    <h3 className="text-xl font-bold text-primary-500 mb-3">
                       {letter.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
@@ -289,7 +289,7 @@ const OurImpact: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Annual <span className="text-[#987543]">Impact Report</span>
+                Annual <span className="text-primary-600">Impact Report</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 Download our comprehensive report on the impact of our
@@ -300,7 +300,7 @@ const OurImpact: React.FC = () => {
             <div className="bg-white dark:bg-neutral-900 rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
               <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-[#987543] mb-4">
+                  <h3 className="text-2xl font-bold text-primary-500 mb-4">
                     Viva Hope Global Foundation Annual Report 2025
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-6">
@@ -341,7 +341,7 @@ const OurImpact: React.FC = () => {
         <section className="py-20 bg-gray-50 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Global Reach
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -385,7 +385,7 @@ const OurImpact: React.FC = () => {
                   whileHover={{ scale: 0.98 }}
                   className="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-md"
                 >
-                  <h3 className="text-lg font-semibold text-[#987543] mb-4">
+                  <h3 className="text-lg font-semibold text-primary-500 mb-4">
                     {region.region}
                   </h3>
                   <div className="space-y-3">
@@ -418,7 +418,7 @@ const OurImpact: React.FC = () => {
 
       {/* CTA Section */}
       <ScrollAnimation>
-        <section className="py-20 bg-gradient-to-r from-neutral-900 to-[#987543] text-white">
+        <section className="py-20 bg-gradient-to-r from-primary-700 to-secondary-600 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Be Part of Our Growing Impact

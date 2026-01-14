@@ -6,7 +6,7 @@ import logo from "../images/logo1.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-950 text-white">
+    <footer className="bg-tertiary-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Organization Info */}
@@ -14,21 +14,20 @@ const Footer: React.FC = () => {
             <Link
               to="/"
               className="flex items-center space-x-2 text-xl font-bold text-primary-400 mb-4"
-              aria-label="Twelve In Twelve LBG Home"
+              aria-label="Viva Hope Global Foundation Home"
             >
               <img
                 src={logo}
-                alt="Twelve In Twelve LBG Logo"
+                alt="Viva Hope Global Foundation Logo"
                 className="w-32 h-auto object-contain"
               />
             </Link>
             <p className="text-gray-300 mb-4">
-              Ensuring universal access to standardised healthcare services in
-              underserved communities all over Ghana.
+              Restoring dignity, opportunity, and hope for children in underserved communities through education, nutrition, and access to essential resources.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/twelveintwelvelbg"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded"
@@ -37,7 +36,7 @@ const Footer: React.FC = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.tiktok.com/@12.in.12"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded"
@@ -117,27 +116,27 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
                 <a
-                  href="mailto:info@twelveintwelvelbg.org"
+                  href="mailto:info@vivahopeglobal.org"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  info@twelveintwelvelbg.org
+                  info@vivahopeglobal.org
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
                 <a
-                  href="tel:+233538795542"
+                  href="tel:959-254-6845"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  +233 53 879 5542
+                  959-254-6845
                 </a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
                 <address className="text-gray-300 not-italic">
-                  HNo. C2/11, Sakumono
+                  88 Johl Drive, Groton
                   <br />
-                  Tema, Ghana
+                  Connecticut, USA
                 </address>
               </div>
             </div>
@@ -147,8 +146,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm text-center md:text-left">
-            © 2025 Twelve In Twelve LBG. All rights reserved. | Transforming the
-            health of our nation, one citizen at a time.
+            © 2025 Viva Hope Global Foundation. All rights reserved. | Restoring dignity, opportunity, and hope—one child at a time.
           </p>
 
           {/* <div className="flex space-x-6 mt-4 md:mt-0">

@@ -18,7 +18,7 @@ import { Button } from "../components/Button";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
 import { PaystackButton } from "react-paystack";
 import toast from "react-hot-toast";
-import proven from "../images/proven.jpeg";
+import hero from "../images/hero.jpg";
 import { Link } from "react-router-dom";
 import ThankYouModal from "../components/ThankYouModal";
 
@@ -136,7 +136,7 @@ const GetInvolved: React.FC = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               Join Us in{' '}
-              <span className="text-[#987543]">Transforming Education</span>
+              <span className="text-primary-600">Transforming Education</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               Join our community of supporters working together to ensure
@@ -153,7 +153,7 @@ const GetInvolved: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Ways to <span className="text-[#987543]">Get Involved </span>
+                Ways to <span className="text-primary-500">Get Involved </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 Multiple ways to support our educational mission and create
@@ -208,10 +208,10 @@ const GetInvolved: React.FC = () => {
                   whileHover={{ scale: 0.98 }}
                   className="bg-white dark:bg-neutral-900 rounded-2xl p-6 shadow-lg"
                 >
-                  <div className="bg-primary-100 dark:bg-primary-900 p-3 rounded-xl w-fit mx-auto mb-4">
-                    <opportunity.icon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                  <div className="bg-secondary-100 dark:bg-secondary-900 p-3 rounded-xl w-fit mx-auto mb-4">
+                    <opportunity.icon className="w-6 h-6 text-secondary-600 dark:text-secondary-400" />
                   </div>
-                  <h3 className="text-xl font-semibold  mb-3 text-[#987543] text-center">
+                  <h3 className="text-xl font-semibold  mb-3 text-primary-500 text-center">
                     {opportunity.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
@@ -241,7 +241,7 @@ const GetInvolved: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl text-[#987543] font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl text-primary-600 font-bold mb-4">
                 Support Our Educational Mission
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -277,7 +277,7 @@ const GetInvolved: React.FC = () => {
               {/* Custom Pay Button */}
               <button
                 onClick={handleCustomDonate}
-                className="bg-yellow-900 text-white py-3 px-6 rounded-lg w-full hover:opacity-90"
+                className="bg-secondary-900 text-white py-3 px-6 rounded-lg w-full hover:from-secondary-600 hover:to-secondary-400 hover:bg-gradient-to-r hover:shadow-lg"
               >
                 Donate ₵{amount || "Now"}
               </button>
@@ -319,11 +319,11 @@ const GetInvolved: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className={`bg-white dark:bg-neutral-800 rounded-2xl p-8 shadow-lg relative ${
-                    option.popular ? "ring-2 ring-[#987543]" : ""
+                    option.popular ? "ring-2 ring-primary-500" : ""
                   }`}
                 >
                   {option.popular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#987543] text-white text-sm font-medium px-4 py-1 rounded-full">
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-500 text-white text-sm font-medium px-4 py-1 rounded-full">
                       Most Popular
                     </div>
                   )}
@@ -343,7 +343,8 @@ const GetInvolved: React.FC = () => {
                   <div className="w-full flex items-center justify-center">
                     <PaystackButton
                       {...componentProps}
-                      className="bg-yellow-900 text-white dark:bg-white dark:text-black shadow-md py-2 px-7 rounded-lg hover:from-black hover:to-[#987543] dark:hover:text-white hover:bg-gradient-to-r hover:shadow-lg"
+                      className="bg-secondary-900 text-white dark:bg-white dark:text-black shadow-md py-2 px-7 rounded-lg hover:from-secondary-600 hover:to-secondary-400 dark:hover:text-white hover:bg-gradient-to-r hover:shadow-lg"
+                      
                       amount={
                         option.type === "one-time"
                           ? parseInt(option.amount.replace(/[^\d]/g, "")) * 100
@@ -369,7 +370,7 @@ const GetInvolved: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-6">
                   Why Support Viva Hope Global Foundation?
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
@@ -406,7 +407,7 @@ const GetInvolved: React.FC = () => {
                         <div className="w-2 h-2 bg-secondary-600 rounded-full"></div>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-[#987543] mb-2">
+                        <h3 className="text-lg font-semibold text-primary-500 mb-2">
                           {reason.title}
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300">
@@ -420,7 +421,7 @@ const GetInvolved: React.FC = () => {
 
               <div className="relative">
                 <img
-                  src={proven}
+                  src={hero}
                   alt="Community members working together on an educational project"
                   className="rounded-2xl shadow-xl w-full h-auto"
                   width="600"
@@ -437,7 +438,7 @@ const GetInvolved: React.FC = () => {
         <section className="py-20 dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543]  mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600  mb-4">
                 Supporter Stories
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -474,10 +475,10 @@ const GetInvolved: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   className="bg-white dark:bg-neutral-900 rounded-2xl p-8 shadow-lg"
                 >
-                  <div className="text-primary-600 dark:text-primary-400 font-medium text-sm mb-2">
+                  <div className="text-secondary-600 dark:text-primary-400 font-medium text-sm mb-2">
                     {story.supporter} - {story.role}
                   </div>
-                  <h3 className="text-2xl font-bold text-[#987543] mb-4">
+                  <h3 className="text-2xl font-bold text-primary-500 mb-4">
                     {story.project || story.impact}
                   </h3>
                   {story.results && (
@@ -500,7 +501,7 @@ const GetInvolved: React.FC = () => {
 
       {/* CTA Section */}
       <ScrollAnimation>
-        <section className="py-20 bg-gradient-to-r from-neutral-900 to-[#987543] text-white">
+        <section className="py-20 bg-gradient-to-r from-primary-700 to-secondary-600 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Make a Difference in Education?

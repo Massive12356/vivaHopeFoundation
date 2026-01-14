@@ -42,16 +42,28 @@ export const Button: React.FC<ButtonProps> = ({
   const variantClasses = {
     // Primary buttons now have your gradient hover effect
     primary: `
-      bg-yellow-900 text-white  shadow-md hover:from-black hover:to-[#987543] 
-      hover:text-white hover:bg-gradient-to-r hover:shadow-lg border-white dark:bg-white dark:text-black dark:hover:text-white hover:bg-white  shadow-md hover:from-black hover:to-[#987543] 
+      bg-primary-500 text-white shadow-md
+      hover:bg-gradient-to-r
+      hover:from-primary-600 hover:to-primary-400
+      hover:shadow-lg
     `,
-    secondary:
-      "bg-secondary-600 hover:bg-secondary-700 text-white shadow-md hover:shadow-lg",
-    outline:
-      "border-2 border-primary-600 text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20",
-    ghost:
-      "text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:bg-gray-800",
-  };
+    secondary: `
+      bg-secondary-500 text-white shadow-md
+      hover:bg-gradient-to-r
+      hover:from-secondary-600 hover:to-secondary-400
+      hover:shadow-lg
+    `,
+    outline: `
+      border-2 border-secondary-500 text-secondary-500
+      hover:bg-gradient-to-r
+      hover:from-secondary-50 hover:to-secondary-100
+    `,
+    ghost: `
+      text-tertiary-500
+      hover:bg-gradient-to-r
+      hover:from-tertiary-100 hover:to-tertiary-200
+    `,
+  };  
 
   const sizeClasses = {
     sm: "px-3 py-2 text-sm gap-2",

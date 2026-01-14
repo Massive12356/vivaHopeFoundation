@@ -90,7 +90,7 @@ const ContactUs: React.FC = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-              Get in Touch <span className="text-[#987543]">with Us</span>
+              Get in Touch <span className="text-primary-600">with Us</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               Ready to support our educational mission? Have questions about our
@@ -109,7 +109,7 @@ const ContactUs: React.FC = () => {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
                   Let's Start a{" "}
-                  <span className="text-[#987543]">Conversation</span>{" "}
+                  <span className="text-primary-600">Conversation</span>{" "}
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                   Whether you're interested in supporting our mission,
@@ -152,11 +152,11 @@ const ContactUs: React.FC = () => {
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       className="flex items-start space-x-4"
                     >
-                      <div className="bg-primary-100 dark:bg-primary-900 p-3 rounded-xl">
-                        <contact.icon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                      <div className="bg-secondary-100 dark:bg-secondary-900 p-3 rounded-xl">
+                        <contact.icon className="w-6 h-6 text-secondary-600 dark:text-secondary-400" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold text-[#987543] mb-2">
+                        <h3 className="text-xl font-semibold text-primary-500 mb-2">
                           {contact.title}
                         </h3>
                         <div className="text-gray-800 dark:text-gray-200 font-medium mb-1 whitespace-pre-line">
@@ -179,7 +179,7 @@ const ContactUs: React.FC = () => {
                 className="bg-white dark:bg-neutral-900 rounded-2xl p-8 shadow-lg"
               >
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                  Send Us a <span className="text-[#987543]">Message</span>
+                  Send Us a <span className="text-primary-500">Message</span>
                 </h3>
 
                 <form className="space-y-6" onSubmit={handleSubmit}>
@@ -399,7 +399,7 @@ const ContactUs: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Frequently{" "}
-                <span className="text-[#987543]">Asked Questions</span>
+                <span className="text-primary-600">Asked Questions</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 Quick answers to common questions about supporting our
@@ -443,7 +443,7 @@ const ContactUs: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-md"
                 >
-                  <h3 className="text-lg font-semibold text-[#987543] mb-3">
+                  <h3 className="text-lg font-semibold text-primary-500 mb-3">
                     {faq.question}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">

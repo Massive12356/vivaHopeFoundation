@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="bg-white dark:bg-neutral-950 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 p-2"
+      className="bg-white dark:bg-tertiary-900 shadow-sm border-b border-gray-200 dark:border-tertiary-700 sticky top-0 z-50 p-2"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -35,11 +35,11 @@ const Header: React.FC = () => {
           <Link
             to="/"
             className="flex items-center space-x-2"
-            aria-label="Twelve In Twelve LBG Home"
+            aria-label="Viva Hope Global Foundation Home"
           >
             <img
               src={logo}
-              alt="Twelve In Twelve LBG Logo"
+              alt="Viva Hope Global Foundation Logo"
               className="w-50 h-20 object-contain"
             />
           </Link>
@@ -51,8 +51,8 @@ const Header: React.FC = () => {
                 to={item.path}
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 ${
                   isActive(item.path)
-                    ? "text-[#987543] font-extrabold dark:text-primary-40"
-                    : "text-gray-700 font-bold dark:text-gray-200 hover:text-[#987543] dark:hover:text-[#987543]"
+                    ? "text-primary-600 font-extrabold dark:text-primary-400"
+                    : "text-gray-700 font-bold dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400"
                 }`}
                 aria-label={`Navigate to ${item.name}`}
               >
@@ -63,8 +63,7 @@ const Header: React.FC = () => {
 
           <HashLink to={"/get-involved#giving"}>
             <button
-              className="hidden md:block border-white dark:bg-white dark:text-black dark:hover:text-white bg-[#987543] hover:bg-white text-white  shadow-md hover:from-black hover:to-[#987543] 
-      hover:text-white hover:bg-gradient-to-r hover:shadow-lg py-3 px-6 rounded-lg"
+              className="hidden md:block border-white dark:bg-white dark:text-black dark:hover:text-white bg-secondary-500 hover:bg-white text-white  shadow-md hover:bg-gradient-to-r hover:from-secondary-600 hover:to-secondary-400 hover:shadow-lg py-3 px-6 rounded-lg"
               aria-label="Contact us about volunteering"
             >
               Donate
@@ -109,7 +108,7 @@ const Header: React.FC = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="absolute  right-2 rounded-lg flex flex-col items-center w-[70%] bg-white dark:bg-black p-4 lg:hidden border-t border-gray-200 dark:border-gray-700"
+              className="absolute  right-2 rounded-lg flex flex-col items-center w-[70%] bg-white dark:bg-tertiary-900 p-4 lg:hidden border-t border-gray-200 dark:border-gray-700"
             >
               <div className="px-2 pt-2 pb-3 space-y-1 ">
                 {navigationItems.map((item) => (
@@ -134,8 +133,7 @@ const Header: React.FC = () => {
                 onClick={()=>setIsMenuOpen(false)}
               >
                 <button
-                  className="flex md:hidden border-white dark:bg-white dark:text-black dark:hover:text-white bg-[#987543] hover:bg-white text-white  shadow-md hover:from-black hover:to-[#987543] 
-      hover:text-white hover:bg-gradient-to-r hover:shadow-lg py-2 px-10 rounded-lg"
+                  className="flex md:hidden border-white dark:bg-white dark:text-black dark:hover:text-white bg-secondary-500 hover:bg-white text-white  shadow-md hover:bg-gradient-to-r hover:from-secondary-600 hover:to-secondary-400 hover:shadow-lg py-2 px-10 rounded-lg"
                   aria-label="Contact us about volunteering"
                 >
                   Donate

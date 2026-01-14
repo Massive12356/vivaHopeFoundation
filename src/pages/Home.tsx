@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Users, Heart, Award, MapPin, Calendar, BookOpen, GraduationCap, Utensils, Building, Laptop } from 'lucide-react';
 import { Button } from '../components/Button';
 import { ScrollAnimation } from '../hooks/useScrollAnimation';
-import hero from '../images/hero.webp'
-import hero1 from '../images/hero1.webp'
-import whatWeDo from '../images/whatWeDo.webp'
+import hero from '../images/hero.jpg'
+import hero1 from '../images/hero1.jpg'
+import whatWeDo from '../images/whatWeDo.jpg'
 import nasikaImage from '../images/Nasika.jpeg';
 import AnimatedCount from '../lib/AnimateCount';
 import { Link } from 'react-router-dom';
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
                         <React.Fragment key={idx}>
                           {part}
                           {idx < arr.length - 1 && (
-                            <span className="text-[#987543]">
+                            <span className="text-primary-400">
                               <br /> {slide.highlight}
                             </span>
                           )}
@@ -124,9 +124,10 @@ const Home: React.FC = () => {
                     <Link to={slide.buttonLink}>
                       <Button
                         size="lg"
+                        variant='secondary'
                         icon={Heart}
                         iconPosition="right"
-                        className="bg-white font-extrabold text-black hover:bg-gradient-to-r hover:from-black hover:to-[#987543] hover:text-white transition-all duration-300 "
+                        className="bg-white text-tertiary-900 border-white hover:bg-white hover:text-white transition-all duration-300"
                       >
                         {slide.buttonText}
                       </Button>
@@ -145,7 +146,7 @@ const Home: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Our <span className="text-[#987543]">Mission</span>
+                Our <span className="text-primary-600">Mission</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                 To bridge the gap between global resources and local needs for underserved children. Viva Hope Global Foundation eliminates barriers to education by providing nutritious meals, safe sanitation, functional classrooms, access to technology, uniforms, footwear, and essential learning materials—ensuring that every child can learn with dignity and opportunity.
@@ -181,7 +182,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="text-center p-6 bg-white dark:bg-neutral-900 rounded-xl shadow-md"
                 >
-                  <item.icon className="w-12 h-12 text-[#987543] mx-auto mb-4" />
+                  <item.icon className="w-12 h-12 text-primary-500 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     {item.title}
                   </h3>
@@ -200,7 +201,7 @@ const Home: React.FC = () => {
         <section className="py-20  dark:bg-neutral-900 ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 What We Do
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -240,9 +241,9 @@ const Home: React.FC = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     className="flex items-start space-x-4"
                   >
-                    <CheckCircle className="w-6 h-6 text-[#987543] flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-primary-500 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-xl font-semibold text-[#987543] mb-2">
+                      <h3 className="text-xl font-semibold text-primary-500 mb-2">
                         {item.title}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
@@ -256,7 +257,7 @@ const Home: React.FC = () => {
               <div className="relative">
                 <img
                   src={whatWeDo}
-                  alt="Healthcare workers providing maternal care in a rural clinic"
+                  alt="Students learning in a supported classroom environment"
                   className="rounded-2xl shadow-xl w-full h-96 object-cover"
                   width="600"
                   height="400"
@@ -272,7 +273,7 @@ const Home: React.FC = () => {
         <section className="py-20 bg-gray-50 dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold  text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold  text-primary-600 mb-4">
                 Our Impact
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -302,7 +303,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-5xl font-bold text-[#987543] mb-2">
+                  <div className="text-5xl font-bold text-primary-500 mb-2">
                     <AnimatedCount value={item.stat} />
                   </div>
 
@@ -321,8 +322,8 @@ const Home: React.FC = () => {
               className="bg-white dark:bg-neutral-900 rounded-2xl p-8 max-w-4xl mx-auto shadow-lg"
             >
               <div className="flex items-center mb-6">
-                <Award className="w-8 h-8 text-[#987543] mr-3" />
-                <h3 className="text-xl font-bold text-[#987543]">
+                <Award className="w-8 h-8 text-primary-500 mr-3" />
+                <h3 className="text-xl font-bold text-primary-500">
                   Community Impact Story
                 </h3>
               </div>
@@ -349,7 +350,7 @@ const Home: React.FC = () => {
         <section className="py-20 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Upcoming Events
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -379,7 +380,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="bg-white dark:bg-neutral-800 rounded-2xl p-6 shadow-lg"
                 >
-                  <div className="flex items-center text-[#987543] mb-3">
+                  <div className="flex items-center text-primary-500 mb-3">
                     <Calendar className="w-5 h-5 mr-2" />
                     <span className="font-medium">{event.date}</span>
                   </div>
@@ -398,7 +399,7 @@ const Home: React.FC = () => {
 
       {/* CTA Section */}
       <ScrollAnimation>
-        <section className="py-20 bg-gradient-to-r from-neutral-900 to-[#987543] text-white">
+        <section className="py-20 bg-gradient-to-r from-primary-700 to-secondary-600 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Join Us in Transforming Education

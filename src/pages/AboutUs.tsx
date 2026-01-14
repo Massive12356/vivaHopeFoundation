@@ -3,14 +3,14 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Heart, Target, Award } from "lucide-react";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
-import ceo from "../images/1.webp";
+import ceo from "../images/ceo.jpg";
 import pic1 from "../images/57.webp";
-import pic2 from "../images/58.jpg";
-import pic3 from "../images/59.jpg";
-import pic4 from "../images/60.webp";
+import pic2 from "../images/pic2.jpg";
+import pic3 from "../images/pic3.jpg";
+import pic4 from "../images/pic4.jpg";
 import pic5 from "../images/62.jpg";
 import pic6 from "../images/63.jpg";
-import pic7 from "../images/61.webp";
+import pic7 from "../images/pic7.jpg";
 
 const AboutUs: React.FC = () => {
   return (
@@ -38,7 +38,7 @@ const AboutUs: React.FC = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-snug md:leading-snug lg:leading-none mb-4">
               Restoring Dignity and <br />
-              <span className="text-[#987543]">Opportunity to Children</span>
+              <span className="text-primary-600">Opportunity to Children</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Founded in 2025 by Patience Odikah, Viva Hope Global Foundation is
@@ -102,7 +102,7 @@ const AboutUs: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-6">
                   Our Story
                 </h2>
                 <div className="space-y-6">
@@ -134,7 +134,7 @@ const AboutUs: React.FC = () => {
         <section className="py-20 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Our Goals and Objectives
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -160,8 +160,8 @@ const AboutUs: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="flex items-start space-x-4 bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-lg"
                 >
-                  <div className="bg-primary-100 dark:bg-primary-900 p-2 rounded-lg">
-                    <div className="w-6 h-6 text-primary-600 dark:text-primary-400 font-bold text-center">
+                  <div className="bg-secondary-100 dark:bg-secondary-900 p-2 rounded-lg">
+                    <div className="w-6 h-6 text-secondary-600 dark:text-secondary-400 font-bold text-center">
                       {index + 1}
                     </div>
                   </div>
@@ -178,7 +178,7 @@ const AboutUs: React.FC = () => {
         <section id="team" className="py-20 bg-gray-50 dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Meet Our Founder
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -205,7 +205,7 @@ const AboutUs: React.FC = () => {
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   Patience Odikah
                 </h3>
-                <div className="text-[#987543] font-medium mb-3">
+                <div className="text-primary-500 font-medium mb-3">
                   Founder
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
@@ -227,7 +227,7 @@ const AboutUs: React.FC = () => {
         <section className="py-20 bg-gray-50 dark:bg-neutral-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#987543] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
                 Our Core Values
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -248,7 +248,7 @@ const AboutUs: React.FC = () => {
                   value: "Empathy",
                   description:
                     "We listen and respond to the real needs of children and teachers.",
-                  image: ceo,
+                  image: pic4,
                 },
                 {
                   value: "Advocacy",
@@ -284,11 +284,11 @@ const AboutUs: React.FC = () => {
                   {/* Text Section */}
                   <div className="w-full md:w-1/2 p-8 text-center md:text-left">
                     <div className="flex items-center justify-center md:justify-start mb-3">
-                      <div className="bg-yellow-100 dark:bg-yellow-900/20 p-3 rounded-xl">
-                        <Award className="w-6 h-6 text-yellow-600 dark:text-yellow-400" />
+                      <div className="bg-secondary-100 dark:bg-secondary-900/20 p-3 rounded-xl">
+                        <Award className="w-6 h-6 text-secondary-500 dark:text-secondary-400" />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-semibold text-[#987543] mb-4">
+                    <h3 className="text-2xl font-semibold text-primary-500 mb-4">
                       {coreValue.value}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base">
