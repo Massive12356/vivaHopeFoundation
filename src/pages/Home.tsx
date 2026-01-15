@@ -38,7 +38,7 @@ const slides = [
 
 const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
-  const [showPopup, setShowPopup] = React.useState(true);
+  // const [showPopup, setShowPopup] = React.useState(true);
 
   // Auto-slide every 8 seconds
   React.useEffect(() => {
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Popup isOpen={showPopup} onClose={() => setShowPopup(false)} />
+      {/* <Popup isOpen={showPopup} onClose={() => setShowPopup(false)} /> */}
       
       <Helmet>
         <title>
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
                         variant='secondary'
                         icon={Heart}
                         iconPosition="right"
-                        className="bg-white text-tertiary-900 border-white hover:bg-white hover:text-white transition-all duration-300"
+                        className="bg-white text-black text-tertiary-900 border-white hover:bg-white hover:text-white transition-all duration-300"
                       >
                         {slide.buttonText}
                       </Button>
