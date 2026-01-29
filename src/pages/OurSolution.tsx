@@ -106,7 +106,7 @@ const OurProjects: React.FC = () => {
     <>
       <Helmet>
         <title>
-          Our Programs - Viva Hope Global Foundation | Educational Initiatives for Children
+          Our Programs - Viva Hope Global Foundation | For a Brighter Tomorrow
         </title>
         <meta
           name="description"
@@ -124,11 +124,10 @@ const OurProjects: React.FC = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-              Our Educational <span className="text-primary-600">Programs</span>
+              Our <span className="text-primary-600">Programs</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Discover the educational initiatives we've implemented to improve
-              learning outcomes for underserved children and ensure
+              Discover the completed programs we've implemented to restore opportunity and improve learning outcomes for underserved children and ensure
               universal access to quality education.
             </p>
           </motion.div>
