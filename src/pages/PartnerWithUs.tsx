@@ -46,12 +46,12 @@ const GetInvolved: React.FC = () => {
     email,
     amount: numericAmount * 100,
     metadata: {
-      name: "Twelve In Twelve LBG Supporter",
+      name: "VivaHope Foundation Supporter",
       custom_fields: [
         {
           display_name: "Purpose",
           variable_name: "donation_purpose",
-          value: "Healthcare Support Initiative",
+          value: "Donation Support",
         },
       ],
     },
@@ -117,11 +117,11 @@ const GetInvolved: React.FC = () => {
       />
       <Helmet>
         <title>
-          Get Involved - Viva Hope Global Foundation | Join Our Educational Mission
+          Get Involved - VivaHope Foundation | For a Brighter Tomorrow
         </title>
         <meta
           name="description"
-          content="Join Viva Hope Global Foundation to expand educational access for children. Opportunities for individuals, organizations, and communities to create lasting educational impact."
+          content="Join VivaHope Foundation to restore dignity, opportunity, and hope for underserved children and youth through education, vocational skills training, nourishment, and sustainable development."
         />
       </Helmet>
 
@@ -136,12 +136,12 @@ const GetInvolved: React.FC = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               Join Us in{' '}
-              <span className="text-primary-600">Transforming Education</span>
+              <span className="text-primary-600">Restoring Hope & Opportunity</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Join our community of supporters working together to ensure
-              universal access to quality education for
-              underserved children.
+              Join our community of supporters working together to empower underserved
+              children and youth through education, vocational skills training, nourishment,
+              and opportunity.
             </p>
           </motion.div>
         </div>
@@ -197,6 +197,18 @@ const GetInvolved: React.FC = () => {
                     "Resource sharing",
                     "Joint programs",
                     "Sustainable impact",
+                  ],
+                },
+                {
+                  icon: BookOpen,
+                  title: "Support Vocational Training",
+                  description:
+                    "Help fund hands-on vocational training in cosmetics, hairstyling, braiding, and hair locking for youth and young adults.",
+                  benefits: [
+                    "Practical skills training",
+                    "Youth empowerment",
+                    "Economic independence",
+                    "Sustainable livelihoods",
                   ],
                 },
               ].map((opportunity, index) => (
@@ -290,16 +302,16 @@ const GetInvolved: React.FC = () => {
                   title: "₵100 One-Time",
                   amount: "₵100",
                   impact:
-                    "Provides school supplies to one child",
-                  description: "A simple act of kindness that goes a long way.",
+                    "Provides learning materials for a student",
+                  description: "Supports Tools for Tomorrow learning supplies.",
                   type: "one-time",
                 },
                 {
                   title: "₵50 Monthly Support",
                   amount: "₵50/month",
-                  impact: "Supports ongoing feeding programs",
+                  impact: "Helps provide meals for students",
                   description:
-                    "Create sustainable impact with regular contributions.",
+                    "Supports the Feed to Lead nutrition program.",
                   type: "monthly",
                   planCode: "PLN_qqsrbdkas0mzhsp",
                   popular: true,
@@ -308,8 +320,8 @@ const GetInvolved: React.FC = () => {
                   title: "Major Gift (₵1,000+)",
                   amount: "₵1,000+",
                   impact:
-                    "Funds a complete education package for multiple children",
-                  description: "Transform an entire classroom.",
+                    "Supports infrastructure, digital labs, or vocational training",
+                  description: "Fund classrooms, computer labs, or VivaSkills training.",
                   type: "one-time",
                 },
               ].map((option, index) => (
@@ -350,7 +362,7 @@ const GetInvolved: React.FC = () => {
                           ? parseInt(option.amount.replace(/[^\d]/g, "")) * 100
                           : 0
                       }
-                      email={email || "info@twelveintwelvelbg.org"}
+                      email={email || "infor@vivaloks.com"}
                       text="Donate Now"
                       {...(option.type === "monthly"
                         ? { plan: option.planCode, currency: "GHS" }
@@ -371,12 +383,12 @@ const GetInvolved: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-6">
-                  Why Support Viva Hope Global Foundation?
+                  Why Support VivaHope Foundation?
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  With proven experience, innovative solutions, and a commitment
-                  to sustainable impact, we're the ideal organization for
-                  supporters serious about transforming education for children.
+                  VivaHope Foundation takes a holistic approach to restoring dignity and
+                  opportunity for underserved children and youth through education, vocational
+                  skills training, nourishment, and sustainable community development.
                 </p>
 
                 <div className="space-y-6">
@@ -389,7 +401,7 @@ const GetInvolved: React.FC = () => {
                     {
                       title: "Comprehensive Approach",
                       description:
-                        "End-to-end educational solutions covering nutrition, sanitation, technology, supplies, uniforms, and footwear",
+                        "Holistic programs covering education, nutrition, sanitation, technology, learning materials, uniforms, and vocational skills training",
                     },
                     {
                       title: "Local Adaptation",
@@ -462,9 +474,9 @@ const GetInvolved: React.FC = () => {
                   role: "Teachers and Mentors",
                   project: "Alogboshie Basic School Support",
                   results:
-                    "Provided tutoring and mentorship to 100+ students in remote communities",
+                    "Supported students and youth through education, mentorship, and skills development programs",
                   quote:
-                    "Volunteering with Viva Hope Global Foundation has allowed us to extend our educational expertise to children that desperately need it. The experience has been incredibly rewarding.",
+                    "Volunteering with VivaHope Foundation has allowed us to extend our educational expertise to children that desperately need it. The experience has been incredibly rewarding.",
                   author: "Patricia Johnson, Volunteer Team Leader",
                 },
               ].map((story, index) => (
@@ -504,11 +516,11 @@ const GetInvolved: React.FC = () => {
         <section className="py-20 bg-gradient-to-r from-primary-700 to-secondary-600 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Make a Difference in Education?
+              Ready to Restore Dignity and Opportunity?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join our mission to transform education and improve learning
-              outcomes for children.
+              Your support helps children and youth access education, gain skills, and build
+              sustainable futures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={"/contact-us"}>

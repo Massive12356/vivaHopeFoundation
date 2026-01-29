@@ -1,9 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { Users, Award, Globe, Heart, Download, BookOpen, GraduationCap, Utensils, Building, Laptop } from "lucide-react";
+import { Users, Award, Globe, Heart, Download, BookOpen, GraduationCap, Utensils, Building, Laptop, Calendar, Scissors, Building2 } from "lucide-react";
 import { Button } from "../components/Button";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
+import hero from '../images/hero.jpg'
 import feed2 from "../images/feed2.jpg";
 import feed1 from "../images/feed1.jpg";
 import { Link } from "react-router-dom";
@@ -23,7 +24,7 @@ const OurImpact: React.FC = () => {
         </title>
         <meta
           name="description"
-          content="Discover the measurable impact Viva Hope Global Foundation has made across communities - from children fed to educational resources provided."
+          content="Discover the measurable impact VivaHope Foundation has made across communities - from children fed to educational resources provided."
         />
       </Helmet>
 
@@ -69,7 +70,7 @@ const OurImpact: React.FC = () => {
                 },
                 {
                   icon: Globe,
-                  number: "2",
+                  number: "1",
                   label: "Countries Served",
                   description: "Ghana and expanding across Africa",
                 },
@@ -137,17 +138,30 @@ const OurImpact: React.FC = () => {
                     "Better academic performance",
                   ],
                 },
+                // {
+                //   title: "Project Dignity Infrastructure",
+                //   location: "Alogboshie Basic School, Ghana",
+                //   story:
+                //     "Our Project Dignity initiative constructed dedicated restroom blocks and a teachers' office at Alogboshie Basic School. Students now have access to proper sanitation facilities and teachers have a dedicated workspace for lesson planning.",
+                //   image: feed2,
+                //   impact: [
+                //     "Improved sanitation for students",
+                //     "Dedicated workspace for teachers",
+                //     "Enhanced learning environment",
+                //     "Restored privacy and dignity",
+                //   ],
+                // },
                 {
-                  title: "Project Dignity Infrastructure",
+                  title: "Tools for Tomorrow Success",
                   location: "Alogboshie Basic School, Ghana",
                   story:
-                    "Our Project Dignity initiative constructed dedicated restroom blocks and a teachers' office at Alogboshie Basic School. Students now have access to proper sanitation facilities and teachers have a dedicated workspace for lesson planning.",
-                  image: feed2,
+                    "Through our Tools for Tomorrow program, we provide essential learning materials such as exercise books, pens, pencils, and nap mats to students in underserved classrooms. By removing the burden of missing supplies, children are empowered to participate fully in lessons and focus on their education without distraction or embarrassment.",
+                  image: hero,
                   impact: [
-                    "Improved sanitation for students",
-                    "Dedicated workspace for teachers",
-                    "Enhanced learning environment",
-                    "Restored privacy and dignity",
+                    "Students have access to essential learning materials",
+                    "Increased classroom participation and confidence",
+                    "Reduced learning disruptions caused by lack of supplies",
+                    "Improved focus and academic engagement"
                   ],
                 },
               ].map((story, index) => (
@@ -197,8 +211,86 @@ const OurImpact: React.FC = () => {
         </section>
       </ScrollAnimation>
 
-      {/* Letters of Appreciation */}
+      {/* Upcoming Projects */}
       <ScrollAnimation>
+        <section className="py-20 bg-gray-50 dark:bg-neutral-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
+                Upcoming Projects & Initiaties
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300">
+                Planned educational initiatives to further our mission in Ghana and internationally.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                {
+                  date: "Ongoing",
+                  title: "School Infrastructure Development",
+                  description:
+                    "Construction of classrooms, restroom facilities, teachers’ offices, and a student cafeteria to create safe, dignified learning environments.",
+                  icon: Building2,
+                },
+                {
+                  date: "Planned",
+                  title: "Computer Lab & Digital Literacy Program",
+                  description:
+                    "Establish a fully equipped computer lab with internet access and provide digital literacy training to prepare students for the modern world.",
+                  icon: Laptop,
+                },
+                {
+                  date: "Planned",
+                  title: "VivaSkills Vocational Training Launch",
+                  description:
+                    "Rollout of vocational training programs in cosmetics, hairstyling, braiding, and hair locking to empower youth with income-generating skills.",
+                  icon: Scissors,
+                },
+                {
+                  date: "Future",
+                  title: "Expansion to Additional Communities",
+                  description:
+                    "Extend VivaHope programs to more schools and underserved communities across Ghana and beyond.",
+                  icon: GraduationCap,
+                }
+
+              ].map((project, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white dark:bg-neutral-800 rounded-2xl p-6 shadow-lg"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-secondary-100 dark:bg-secondary-900 p-3 rounded-xl flex-shrink-0">
+                      <project.icon className="w-6 h-6 text-secondary-600 dark:text-secondary-400" />
+                    </div>
+                    <div>
+                      <div className="flex items-center  mb-2">
+                        <Calendar className="w-4 h-4 mr-2 text-primary-500" />
+                        <span className="font-medium text-primary-500">
+                          {project.date}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {project.description}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </ScrollAnimation>
+
+      {/* Letters of Appreciation */}
+      {/* <ScrollAnimation>
         <section className="py-20 bg-gray-50 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -281,10 +373,10 @@ const OurImpact: React.FC = () => {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* Annual Impact Report */}
-      <ScrollAnimation>
+      {/* <ScrollAnimation>
         <section className="py-20 dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -334,10 +426,10 @@ const OurImpact: React.FC = () => {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* Geographic Impact */}
-      <ScrollAnimation>
+      {/* <ScrollAnimation>
         <section className="py-20 bg-gray-50 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -414,7 +506,7 @@ const OurImpact: React.FC = () => {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* CTA Section */}
       <ScrollAnimation>
@@ -440,7 +532,6 @@ const OurImpact: React.FC = () => {
               </Link>
               <Button
                 size="lg"
-                className="border-white text-black hover:bg-white hover:text-primary-600"
                 aria-label="Volunteer with us"
               >
                 Volunteer with Us

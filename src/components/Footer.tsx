@@ -14,16 +14,16 @@ const Footer: React.FC = () => {
             <Link
               to="/"
               className="flex items-center space-x-2 text-xl font-bold text-primary-400 mb-4"
-              aria-label="Viva Hope Global Foundation Home"
+              aria-label="VivaHope Foundation Home"
             >
               <img
                 src={logo}
-                alt="Viva Hope Global Foundation Logo"
+                alt="VivaHope Foundation Logo"
                 className="w-32 h-auto object-contain"
               />
             </Link>
             <p className="text-gray-300 mb-4">
-              Restoring dignity, opportunity, and hope for children in underserved communities through education, nutrition, and access to essential resources.
+              Restoring dignity, opportunity, and hope for children in underserved communities through education, nutrition, and access to essential resources for a brighter tomorrow.
             </p>
             <div className="flex space-x-4">
               <a
@@ -116,19 +116,19 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
                 <a
-                  href="mailto:info@vivahopeglobal.org"
+                  href="mailto:infor@vivaloks.com"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  info@vivahopeglobal.org
+                  infor@vivaloks.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
                 <a
-                  href="tel:959-254-6845"
+                  href="tel:347-712-9360"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  959-254-6845
+                  347-712-9360
                 </a>
               </div>
               <div className="flex items-start space-x-3">
@@ -146,7 +146,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm text-center md:text-left">
-            © 2025 Viva Hope Global Foundation. All rights reserved. | Restoring dignity, opportunity, and hope—one child at a time.
+            © 2025 VivaHope Foundation. All rights reserved. | For a brighter tomorrow.
           </p>
 
           {/* <div className="flex space-x-6 mt-4 md:mt-0">

@@ -28,45 +28,37 @@ import nasikaImage from "../images/Nasika.jpeg";
 
 const OurProjects: React.FC = () => {
   const completedProjects = [
+    // {
+    //   icon: Utensils,
+    //   title: "Feed to Lead Program",
+    //   description:
+    //     "We built a sanitary kitchen and student cafeteria at Alogboshie Basic School where children can eat hot, nutritious meals in a dignified setting. This initiative addresses the critical issue that children cannot absorb knowledge on an empty stomach.",
+    //   regions: "Alogboshie, Ghana",
+    //   image: feed1,
+    // },
+    // {
+    //   icon: Building,
+    //   title: "Project Dignity",
+    //   description:
+    //     "We constructed dedicated restroom blocks and a teachers' office at Alogboshie Basic School. This initiative restores privacy and hygiene for students while providing teachers with a dedicated workspace for lesson planning and grading.",
+    //   regions: "Alogboshie, Ghana",
+    //   image: feed7,
+    // },
+    // {
+    //   icon: Laptop,
+    //   title: "The Digital Future",
+    //   description:
+    //     "We established a fully equipped computer lab with desktops and internet access at Alogboshie Basic School. This initiative gives students essential technical skills for the future and bridges the digital divide.",
+    //   regions: "Alogboshie, Ghana",
+    //   image: feed3,
+    // },
     {
-      icon: Utensils,
-      title: "Feed to Lead Program",
+      icon: Heart,
+      title: "Launch Event",
       description:
-        "We built a sanitary kitchen and student cafeteria at Alogboshie Basic School where children can eat hot, nutritious meals in a dignified setting. This initiative addresses the critical issue that children cannot absorb knowledge on an empty stomach.",
-      regions: "Alogboshie, Ghana",
-      image: feed1,
-    },
-    {
-      icon: Building,
-      title: "Project Dignity",
-      description:
-        "We constructed dedicated restroom blocks and a teachers' office at Alogboshie Basic School. This initiative restores privacy and hygiene for students while providing teachers with a dedicated workspace for lesson planning and grading.",
-      regions: "Alogboshie, Ghana",
-      image: feed7,
-    },
-    {
-      icon: Laptop,
-      title: "The Digital Future",
-      description:
-        "We established a fully equipped computer lab with desktops and internet access at Alogboshie Basic School. This initiative gives students essential technical skills for the future and bridges the digital divide.",
-      regions: "Alogboshie, Ghana",
-      image: feed3,
-    },
-    {
-      icon: BookOpen,
-      title: "Tools for Tomorrow",
-      description:
-        "We provided exercise books, pens, pencils, and nap mats to students at Alogboshie Basic School. This ensures children can focus on learning instead of missing resources.",
+        "We launched in December 2025 with donations of food and school supplies to Alogboshie Basic School, including cultural performances, music, and a student talent showcase. This celebration brought the community together.",
       regions: "Alogboshie, Ghana",
       image: whatWeDo,
-    },
-    {
-      icon: GraduationCap,
-      title: "Step Into Learning",
-      description:
-        "We provided school uniforms for every student and proper shoes to foster equality and school pride. This initiative encourages participation in extracurricular activities like soccer, building confidence and a sense of belonging.",
-      regions: "Alogboshie, Ghana",
-      image: feed4,
     },
     {
       icon: Users,
@@ -77,29 +69,37 @@ const OurProjects: React.FC = () => {
       image: pic7,
     },
     {
-      icon: Heart,
-      title: "Launch Event",
-      description:
-        "We launched in December 2025 with donations of food and school supplies to Alogboshie Basic School, including cultural performances, music, and a student talent showcase. This celebration brought the community together.",
-      regions: "Alogboshie, Ghana",
-      image: hero,
-    },
-    {
       icon: Utensils,
-      title: "Nutrition Program",
+      title: "Feed to Lead Program",
       description:
         "We implemented a comprehensive nutrition program to ensure children receive hot, nutritious meals daily. This initiative addresses the fundamental barrier to learning that hunger creates.",
       regions: "Alogboshie, Ghana",
       image: orphaDonation,
     },
     {
-      icon: Building,
-      title: "Infrastructure Development",
+      icon: BookOpen,
+      title: "Tools for Tomorrow",
       description:
-        "We identified and addressed critical infrastructure needs including bathrooms, kitchen, teachers' office, computer lab, uniforms, and footwear. This comprehensive approach ensures a complete learning environment.",
+        "We provided exercise books, pens, pencils, and nap mats to students at Alogboshie Basic School. This ensures children can focus on learning instead of missing resources.",
       regions: "Alogboshie, Ghana",
-      image: washroomInfra,
+      image: hero,
     },
+    {
+      icon: GraduationCap,
+      title: "Step Into Learning",
+      description:
+        "We provided school uniforms for every student and proper shoes to foster equality and school pride. This initiative encourages participation in extracurricular activities like soccer, building confidence and a sense of belonging.",
+      regions: "Alogboshie, Ghana",
+      image: feed4,
+    },
+    // {
+    //   icon: Building,
+    //   title: "Infrastructure Development",
+    //   description:
+    //     "We identified and addressed critical infrastructure needs including bathrooms, kitchen, teachers' office, computer lab, uniforms, and footwear. This comprehensive approach ensures a complete learning environment.",
+    //   regions: "Alogboshie, Ghana",
+    //   image: washroomInfra,
+    // },
   ];
 
   return (
@@ -110,7 +110,7 @@ const OurProjects: React.FC = () => {
         </title>
         <meta
           name="description"
-          content="Discover the educational programs and initiatives implemented by Viva Hope Global Foundation to improve learning outcomes for underserved children."
+          content="Discover the programs and initiatives implemented by VivaHope Foundation to restore dignity, opportunity, and hope for underserved children and youth through education, vocational skills training, nourishment, and sustainable development."
         />
       </Helmet>
 
@@ -190,7 +190,7 @@ const OurProjects: React.FC = () => {
         </section>
       </ScrollAnimation>
       {/* Upcoming Projects */}
-      <ScrollAnimation>
+      {/* <ScrollAnimation>
         <section className="py-20 bg-gray-50 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -251,10 +251,10 @@ const OurProjects: React.FC = () => {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* Regional Impact */}
-      <ScrollAnimation>
+      {/* <ScrollAnimation>
         <section className="py-20 bg-white dark:bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -309,7 +309,7 @@ const OurProjects: React.FC = () => {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* Partnership Section */}
       <ScrollAnimation>
@@ -331,11 +331,10 @@ const OurProjects: React.FC = () => {
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-center text-primary-600 mb-4">
-                Partnership with TBL Kids Ministries
+                Partnership with VivaLoks
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-                Collaborating to conduct annual free sickle cell screenings in
-                orphanages in the Greater Accra region.
+                Collaborating to give students in underserved areas access to education under good conditions.
               </p>
               <div className="text-center">
                 <div className="inline-flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">

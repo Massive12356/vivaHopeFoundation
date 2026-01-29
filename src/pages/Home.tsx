@@ -19,7 +19,7 @@ const slides = [
     title: "Education for Underserved Children",
     highlight: "Underserved Children",
     description:
-      "Viva Hope Global Foundation bridges the gap between global resources and local needs for underserved children. We eliminate barriers to education by providing nutritious meals, safe sanitation, functional classrooms, access to technology, uniforms, footwear, and essential learning materials.",
+      "VivaHope Foundation restores dignity, opportunity, and hope for underserved children by removing barriers to education through nourishment, safe learning environments, and skills for the future.",
     buttonText: "Support Our Mission",
     buttonLink: "get-involved",
   },
@@ -54,11 +54,11 @@ const Home: React.FC = () => {
       
       <Helmet>
         <title>
-          Viva Hope Global Foundation - Education for Underserved Children
+          VivaHope Foundation - For a Brighter Tomorrow
         </title>
         <meta
           name="description"
-          content="Viva Hope Global Foundation bridges the gap between global resources and local needs for underserved children. We eliminate barriers to education by providing nutritious meals, safe sanitation, functional classrooms, access to technology, uniforms, footwear, and essential learning materials."
+          content="Learn about VivaHope Foundation’s mission to restore dignity, opportunity, and hope for underserved children and youth through education, vocational skills training, nourishment, and sustainable development."
         />
       </Helmet>
 
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
                         variant='secondary'
                         icon={Heart}
                         iconPosition="right"
-                        className="bg-white text-black text-tertiary-900 border-white hover:bg-white hover:text-white transition-all duration-300"
+                        className="bg-white text-gray-950 border-white hover:bg-white hover:text-white transition-all duration-300"
                       >
                         {slide.buttonText}
                       </Button>
@@ -149,7 +149,7 @@ const Home: React.FC = () => {
                 Our <span className="text-primary-600">Mission</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                To bridge the gap between global resources and local needs for underserved children. Viva Hope Global Foundation eliminates barriers to education by providing nutritious meals, safe sanitation, functional classrooms, access to technology, uniforms, footwear, and essential learning materials—ensuring that every child can learn with dignity and opportunity.
+                Empowering underserved children and youth through education, vocational skills training, nourishment, confidence, opportunity, and sustainable futures.
               </p>
             </div>
 
@@ -171,7 +171,7 @@ const Home: React.FC = () => {
                   icon: MapPin,
                   title: "Global Reach",
                   description:
-                    "We work to provide educational support both in the US and internationally, starting in Ghana.",
+                    "We serve communities locally and internationally, beginning in Ghana and expanding through partnerships and sustainable programs.",
                 },
               ].map((item, index) => (
                 <motion.div
@@ -214,25 +214,35 @@ const Home: React.FC = () => {
               <div className="space-y-8">
                 {[
                   {
-                    title: "Feed to Lead (Nutrition & Dining)",
-                    description:
-                      "Building sanitary kitchens and student cafeterias where children can eat hot, nutritious meals in a dignified setting.",
-                  },
-                  {
-                    title: "Project Dignity (Sanitation & Infrastructure)",
-                    description:
-                      "Constructing dedicated restroom blocks, teachers' offices, and renovating classrooms to create safe learning environments.",
-                  },
-                  {
-                    title: "The Digital Future (Technology)",
-                    description:
-                      "Establishing fully equipped computer labs with desktops and internet access to give students essential technical skills for the future.",
-                  },
-                  {
-                    title: "Tools for Tomorrow (Supplies)",
-                    description:
-                      "Providing exercise books, pens, pencils, and nap mats to ensure children can focus on learning instead of missing resources.",
-                  },
+                      title: "Feed to Lead (Nutrition & Dining)",
+                      description:
+                        "Providing hot, nutritious meals through sanitary kitchens and student cafeterias, helping children stay focused, healthy, and ready to learn.",
+                    },
+                    {
+                      title: "Project Dignity (Sanitation & Infrastructure)",
+                      description:
+                        "Improving learning environments by building safe restroom facilities, teachers’ offices, and renovating classrooms for comfort and dignity.",
+                    },
+                    {
+                      title: "The Digital Future (Technology)",
+                      description:
+                        "Equipping schools with computer labs and internet access to help students develop essential digital and technical skills for the future.",
+                    },
+                    {
+                      title: "Tools for Tomorrow (Supplies)",
+                      description:
+                        "Providing essential learning supplies such as exercise books, pens, pencils, and nap mats so children can fully participate in class.",
+                    },
+                    {
+                      title: "Step Into Learning (Uniforms & Footwear)",
+                      description:
+                        "Supplying school uniforms and proper footwear to promote equality, restore dignity, and ensure children feel confident and included.",
+                    },
+                    {
+                      title: "VivaSkills (Vocational Training)",
+                      description:
+                        "Offering hands-on vocational training in cosmetics and hairstyling to build practical skills, confidence, and pathways to economic independence.",
+                    },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -257,8 +267,8 @@ const Home: React.FC = () => {
               <div className="relative">
                 <img
                   src={whatWeDo}
-                  alt="Students learning in a supported classroom environment"
-                  className="rounded-2xl shadow-xl w-full h-96 object-cover"
+                  alt="Image of donators carrying donation items."
+                  className="rounded-2xl shadow-xl w-full h-[520px] object-cover"
                   width="600"
                   height="400"
                 />
@@ -292,7 +302,7 @@ const Home: React.FC = () => {
                   label: "School Supplies Donated",
                 },
                 {
-                  stat: "2",
+                  stat: "1",
                   label: "Countries Served",
                 },
               ].map((item, index) => (
@@ -328,9 +338,8 @@ const Home: React.FC = () => {
                 </h3>
               </div>
               <blockquote className="text-xl text-gray-600 dark:text-gray-300 text-center mb-6 italic">
-                "Thanks to Viva Hope Global Foundation, our children now
-                have access to nutritious meals and essential learning materials. The difference in educational access has been
-                life-changing for our students."
+                "Thanks to VivaHope Foundation, our children now
+                have access to nutritious meals and essential learning materials. The difference has been life-changing. Attendance has improved, students are more focused, and parents feel hopeful again."
               </blockquote>
               <div className="text-center">
                 <div className="font-semibold text-gray-900 dark:text-white">
@@ -346,7 +355,7 @@ const Home: React.FC = () => {
       </ScrollAnimation>
 
       {/* Upcoming Events */}
-      <ScrollAnimation>
+      {/* <ScrollAnimation>
         <section className="py-20 dark:bg-neutral-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -395,7 +404,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </section>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* CTA Section */}
       <ScrollAnimation>
@@ -404,6 +413,10 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Join Us in Transforming Education
             </h2>
+            <p className="text-xl mb-2 opacity-90">
+              Every child deserves dignity, education, and opportunity.
+            </p>
+
             <p className="text-xl mb-8 opacity-90">
               Your support can help us reach more children in need across
               the US and internationally.

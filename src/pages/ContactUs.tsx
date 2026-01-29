@@ -73,10 +73,10 @@ const ContactUs: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Viva Hope Global Foundation | Get in Touch</title>
+        <title>Contact Us - VivaHope Foundation | Get in Touch</title>
         <meta
           name="description"
-          content="Contact Viva Hope Global Foundation to discuss how you can support our mission to bridge the gap between global resources and local needs for underserved children."
+          content="Contact VivaHope Foundation to discuss how you can support our mission to restore dignity, opportunity, and hope for children and youth through education, vocational skills training, nourishment, and sustainable development."
         />
       </Helmet>
 
@@ -93,7 +93,7 @@ const ContactUs: React.FC = () => {
               Get in Touch <span className="text-primary-600">with Us</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Ready to support our educational mission? Have questions about our
+              Ready to support our mission? Have questions about our
               programs? We're here to help and would love to hear from you.
             </p>
           </motion.div>
@@ -122,13 +122,13 @@ const ContactUs: React.FC = () => {
                     {
                       icon: Mail,
                       title: "Email Us",
-                      details: "info@vivahopeglobal.org",
+                      details: "infor@vivaloks.com",
                       description: "General inquiries and support",
                     },
                     {
                       icon: Phone,
                       title: "Call Us",
-                      details: "959-254-6845",
+                      details: "347-712-9360",
                       description: "Monday to Friday, 9AM - 5PM EST",
                     },
                     {

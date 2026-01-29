@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Heart, Target, Award } from "lucide-react";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
 import ceo from "../images/ceo.jpg";
+import hero1 from '../images/hero1.jpg'
 import pic1 from "../images/57.webp";
 import pic2 from "../images/pic2.jpg";
 import pic3 from "../images/pic3.jpg";
@@ -17,12 +18,11 @@ const AboutUs: React.FC = () => {
     <>
       <Helmet>
         <title>
-          About Us - Viva Hope Global Foundation | Education for Underserved
-          Children
+          About Us - VivaHope Foundation | For a Brighter Tomorrow.
         </title>
         <meta
           name="description"
-          content="Learn about Viva Hope Global Foundation's mission to bridge the gap between global resources and local needs for underserved children. We eliminate barriers to education by providing nutritious meals, safe sanitation, functional classrooms, access to technology, uniforms, footwear, and essential learning materials."
+          content="Learn about VivaHope Foundation’s mission to restore dignity, opportunity, and hope for underserved children and youth through education, vocational skills training, nourishment, and sustainable development."
         />
       </Helmet>
 
@@ -41,11 +41,7 @@ const AboutUs: React.FC = () => {
               <span className="text-primary-600">Opportunity to Children</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Founded in 2025 by Patience Odikah, Viva Hope Global Foundation is
-              dedicated to restoring dignity, opportunity, and hope for children in
-              underserved communities. Inspired by her own experiences carrying desks
-              to school and witnessing classmates struggle with hunger, lack of
-              uniforms, and limited learning resources.
+              Founded in 2025 by Patience Odikah, VivaHope Foundation is a nonprofit dedicated to restoring dignity, opportunity, and hope for children and youth in underserved communities. Inspired by Patience’s own childhood experiences in Alogboshie, Ghana, the foundation supports education, nourishment, and vocational training in cosmetics and hairstyling to build confidence and economic independence.
             </p>
           </motion.div>
         </div>
@@ -70,7 +66,7 @@ const AboutUs: React.FC = () => {
                   Our Mission
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To bridge the gap between global resources and local needs for underserved children. Viva Hope Global Foundation eliminates barriers to education by providing nutritious meals, safe sanitation, functional classrooms, access to technology, uniforms, footwear, and essential learning materials—ensuring that every child can learn with dignity and opportunity.
+                  To empower underserved children and youth by removing barriers to learning and personal growth through access to education, vocational skills training, nourishment, and essential resources. VivaHope Foundation is committed to building confidence, creating opportunities, and fostering sustainable futures that enable young people to thrive academically, economically, and socially.
                 </p>
               </motion.div>
 
@@ -88,7 +84,7 @@ const AboutUs: React.FC = () => {
                   Our Vision
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  A world where a child's birthplace does not determine their future—where every student attends school with dignity, nutrition, and the tools they need to become a leader.
+                  A world where every child and youth, regardless of where they are born or the circumstances they face, can learn, grow, and succeed with dignity. We envision communities where education, opportunity, and essential resources empower young people to reach their full potential and become confident contributors to a brighter, more equitable future.
                 </p>
               </motion.div>
             </div>
@@ -103,25 +99,41 @@ const AboutUs: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-6">
-                  Our Story
+                  A Message from Our Founder.
                 </h2>
                 <div className="space-y-6">
                   <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-                    Founded in 2025 by Patience Odikah, who grew up in Alogboshie, Ghana, Viva Hope Global Foundation is a non-profit charity and humanitarian foundation dedicated to restoring dignity, opportunity, and hope for children in underserved communities. Inspired by her own experiences carrying desks to school and witnessing classmates struggle with hunger, lack of uniforms, and limited learning resources, Patience launched the foundation to create lasting change both in her hometown and abroad.
+                    I grew up in Alogboshie, Ghana, attending the same school the children we serve attend today. I remember carrying my own desk to school and trying to learn while hungry. Those memories stayed with me because I know a child cannot thrive when learning in hardship.
                   </p>
+
+                  <p className="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-wide">
+                    A message to every child we serve
+                  </p>
+
+                  <blockquote className="border-l-4 border-primary-500 pl-6 italic text-lg text-gray-700 dark:text-gray-200">
+                    “I see you. I was once where you are now.”
+                  </blockquote>
+
                   <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-                    In partnership with VivaLoks, we fed thousand children and donated textbooks, exercise books, pens, and pencils. Launched in December 2025 with donations of food and school supplies to Alogboshie Basic School, including cultural performances, music, and a student talent showcase.
+                    When I returned years later, I saw classrooms in disrepair, children without books, and many coming to school barefoot and hungry. I knew I had to act. That’s why I founded VivaHope Foundation to restore dignity, opportunity, and hope for children and youth in my community and beyond.
+                    Today, we provide meals, school supplies, uniforms, safe classrooms, and access to technology. We also offer vocational training in cosmetics and hairstyling to empower youth and young adults with skills that build confidence, independence, and economic opportunity.
                   </p>
+
+                  <div className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-xl">
+                    <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
+                      To every supporter: thank you for believing in a brighter tomorrow.
+                      Together, we will rise — one child, one classroom, one community at a time.
+                    </p>
+                  </div>
+
                 </div>
               </div>
 
-              <div className="relative w-full max-w-md mx-auto">
+              <div className="relative w-full max-w-lg mx-auto">
                 <img
                   src={ceo}
-                  alt="Viva Hope Global Foundation team members working with students in a rural community"
-                  className="rounded-2xl shadow-xl w-full h-74 object-cover"
-                  width="600"
-                  height="400"
+                  alt="Founder of VivaHope Foundation"
+                  className="rounded-2xl shadow-xl w-full h-[420px] object-cover"
                 />
               </div>
             </div>
@@ -198,7 +210,7 @@ const AboutUs: React.FC = () => {
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#987543]/20">
                   <img
                     src={ceo}
-                    alt="Patience Odikah - Founder of Viva Hope Global Foundation"
+                    alt="Patience Odikah - Founder of VivaHope Foundation"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -241,7 +253,7 @@ const AboutUs: React.FC = () => {
                 {
                   value: "Dignity",
                   description:
-                    "Every child deserves respect and safe learning environments.",
+                    "Every child deserves respect and a safe environment to learn and grow.",
                   image: pic7,
                 },
                 {
@@ -253,14 +265,20 @@ const AboutUs: React.FC = () => {
                 {
                   value: "Advocacy",
                   description:
-                    "Speaking up for those whose voices are unheard.",
+                    "We speak for those whose voices are unheard.",
                   image: pic2,
                 },
                 {
                   value: "Bridge-Building",
                   description:
-                    "Connecting global resources to local communities to create lasting impact.",
+                    "We connect global resources to local communities to create lasting impact.",
                   image: pic3,
+                },
+                {
+                  value: "Integrity",
+                  description:
+                    "We act with transparency, accountability, and compassion.",
+                  image: hero1,
                 },
               ].map((coreValue, index) => (
                 <motion.div

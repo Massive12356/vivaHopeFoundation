@@ -35,11 +35,11 @@ const Header: React.FC = () => {
           <Link
             to="/"
             className="flex items-center space-x-2"
-            aria-label="Viva Hope Global Foundation Home"
+            aria-label="VivaHope Foundation Home"
           >
             <img
               src={logo}
-              alt="Viva Hope Global Foundation Logo"
+              alt="VivaHope Foundation Logo"
               className="w-50 h-20 object-contain"
             />
           </Link>
