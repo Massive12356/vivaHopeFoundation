@@ -4,7 +4,7 @@ import { LucideIcon } from "lucide-react";
 
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "home";
   size?: "sm" | "md" | "lg";
   icon?: LucideIcon;
   iconPosition?: "left" | "right";
@@ -62,6 +62,11 @@ export const Button: React.FC<ButtonProps> = ({
       text-tertiary-500
       hover:bg-gradient-to-r
       hover:from-tertiary-100 hover:to-tertiary-200
+    `,
+    home: `
+      bg-white text-black shadow-md 
+      hover:bg-gradient-to-r hover:from-secondary-600 hover:to-secondary-400 
+      hover:shadow-lg hover:text-white transition-all duration-300
     `,
   };  
 

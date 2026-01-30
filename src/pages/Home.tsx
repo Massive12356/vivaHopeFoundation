@@ -124,10 +124,10 @@ const Home: React.FC = () => {
                     <Link to={slide.buttonLink}>
                       <Button
                         size="lg"
-                        variant='secondary'
+                        variant='home'
                         icon={Heart}
                         iconPosition="right"
-                        className="bg-white text-gray-950 border-white hover:bg-white hover:text-white transition-all duration-300"
+                        
                       >
                         {slide.buttonText}
                       </Button>
