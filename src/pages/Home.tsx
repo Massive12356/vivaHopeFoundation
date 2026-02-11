@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Users, Heart, Award, MapPin, Calendar, BookOpen, GraduationCap, Utensils, Building, Laptop } from 'lucide-react';
 import { Button } from '../components/Button';
 import { ScrollAnimation } from '../hooks/useScrollAnimation';
-import hero from '../images/hero.jpg'
-import hero1 from '../images/hero1.jpg'
+import hero from '../images/201A0538-2.jpg'
+import hero1 from '../images/742A0226-2New.jpg'
 import whatWeDo from '../images/whatWeDo.jpg'
 import nasikaImage from '../images/Nasika.jpeg';
 import AnimatedCount from '../lib/AnimateCount';
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/55" />
+                <div className="absolute inset-0 bg-black/25" />
 
                 {/* Centered Content */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8">
