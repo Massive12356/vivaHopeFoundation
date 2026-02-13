@@ -5,12 +5,9 @@ import { Heart, Target, Award } from "lucide-react";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
 import ceo from "../images/ceo.jpg";
 import hero1 from '../images/hero1.jpg'
-import pic1 from "../images/57.webp";
 import pic2 from "../images/pic2.jpg";
 import pic3 from "../images/pic3.jpg";
 import pic4 from "../images/pic4.jpg";
-import pic5 from "../images/62.jpg";
-import pic6 from "../images/63.jpg";
 import pic7 from "../images/pic7.jpg";
 
 const AboutUs: React.FC = () => {

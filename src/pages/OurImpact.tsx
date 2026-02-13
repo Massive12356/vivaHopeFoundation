@@ -1,19 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { Users, Award, Globe, Heart, Download, BookOpen, GraduationCap, Utensils, Building, Laptop, Calendar, Scissors, Building2 } from "lucide-react";
+import { Users, Award, Globe, Heart, GraduationCap, Laptop, Calendar, Scissors, Building2 } from "lucide-react";
 import { Button } from "../components/Button";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
-import hero from '../images/hero.jpg'
-import feed2 from "../images/feed2.jpg";
+import hero from '../images/742A0226-2New.jpg'
+
 import feed1 from "../images/feed1.jpg";
 import { Link } from "react-router-dom";
-import document1 from "../images/Appreciation .pdf";
-import document2 from "../images/DOC-20240705-WA0064_251027_121401.pdf";
-import document3 from "../images/LETTER OF APPRECIATION.pdf";
-import document4 from "../images/Letter of appreciation (1).pdf";
-import document5 from "../images/Testimonial - 12 in 12 NGO.pdf";
-import document6 from "../images/appreciation.pdf";
+
 
 const OurImpact: React.FC = () => {
   return (

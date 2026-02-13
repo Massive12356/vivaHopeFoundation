@@ -4,27 +4,23 @@ import { motion } from "framer-motion";
 import {
   Heart,
   Users,
-  Baby,
   BookOpen,
   GraduationCap,
   Calendar,
-  MapPin,
+
   Utensils,
-  Building,
-  Laptop,
+
 } from "lucide-react";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
-import feed1 from "../images/feed1.jpg";
-import hero from "../images/hero.jpg";
-import feed3 from "../images/feed3.jpg";
-import pic7 from "../images/pic7.jpg";
-import feed7 from "../images/feed7.jpg";
 
-import washroomInfra from "../images/washroomInfra.jpg";
+import hero from "../images/742A0226-2New.jpg";
+
+import pic7 from "../images/pic7.jpg";
+
 import orphaDonation from "../images/hero1.jpg";
 import feed4 from "../images/feed4.jpg";
 import whatWeDo from "../images/whatWeDo.jpg";
-import nasikaImage from "../images/Nasika.jpeg";
+
 
 const OurProjects: React.FC = () => {
   const completedProjects = [

@@ -1,24 +1,18 @@
-import React, { useState,useRef } from "react";
+import React, { useState} from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import {
   Handshake,
   Users,
   Heart,
-  ArrowRight,
   CheckCircle,
-  MapPin,
   BookOpen,
-  GraduationCap,
-  Utensils,
-  Building,
-  Laptop,
 } from "lucide-react";
 import { Button } from "../components/Button";
 import { ScrollAnimation } from "../hooks/useScrollAnimation";
 import { PaystackButton } from "react-paystack";
 import toast from "react-hot-toast";
-import hero from "../images/hero.jpg";
+import hero from "../images/whatWeDo.jpg";
 import { Link } from "react-router-dom";
 import ThankYouModal from "../components/ThankYouModal";
 
