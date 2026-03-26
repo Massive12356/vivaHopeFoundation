@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowRight, Heart, Award, Users, BookOpen, GraduationCap, Utensils, Building, Laptop } from 'lucide-react';
+import { Calendar, User, ArrowRight, Heart,Users,GraduationCap, Laptop } from 'lucide-react';
 import { Button } from '../components/Button';
 import { ScrollAnimation } from '../hooks/useScrollAnimation';
 

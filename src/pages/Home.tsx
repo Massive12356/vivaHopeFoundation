@@ -1,39 +1,40 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle, Users, Heart, Award, MapPin, Calendar, BookOpen, GraduationCap, Utensils, Building, Laptop } from 'lucide-react';
+import { CheckCircle, Users, Heart, Award, MapPin} from 'lucide-react';
 import { Button } from '../components/Button';
 import { ScrollAnimation } from '../hooks/useScrollAnimation';
 import hero from '../images/201A0538-2.jpg'
 import hero1 from '../images/742A0226-2New.jpg'
 import whatWeDo from '../images/whatWeDo.jpg'
-import nasikaImage from '../images/Nasika.jpeg';
 import AnimatedCount from '../lib/AnimateCount';
 import { Link } from 'react-router-dom';
-import Popup from '../components/Popup';
+
 
 const slides = [
   {
     id: 1,
-    image: hero,
-    title: "Education for Underserved Children",
-    highlight: "Underserved Children",
+    image: 'https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773152936/WhatsApp_Image_2026-03-06_at_8.43.48_AM_vwjg2l.jpg',
+    title: "Restoring Dignity. Empowering Youth. Transforming Futures.",
+    highlight: "Transforming Futures",
     description:
-      "VivaHope Foundation restores dignity, opportunity, and hope for underserved children by removing barriers to education through nourishment, safe learning environments, and skills for the future.",
+      "VivaHope Foundation empowers underserved children and youth through education, nourishment, safe learning environments, and workforce development, in Connecticut and globally in Ghana.",
     buttonText: "Support Our Mission",
     buttonLink: "get-involved",
   },
   {
     id: 2,
-    image: hero1,
-    title: "Empowering Local Communities",
-    highlight: "Local Communities",
+    image: 'https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773154037/pexels-rdne-6936069_fx6nwk.jpg',
+    title: "Breaking the Cycle of Poverty Through Education & Workforce Development",
+    highlight: "Workforce Development",
     description:
-      "We work directly with communities to improve access to essential education services and programs.",
+      "Empowering youth with practical skills, Hope dignity, and pathways to sustainable economic independence  in USA Connecticut.",
     buttonText: "Learn About Our Work",
     buttonLink: "our-projects",
   },
 ];
+
+const testimonyVideo = 'https://res.cloudinary.com/dnwxx9wx5/video/upload/v1773313554/TestimonyVideo_vw4ppx.mp4';
 
 
 const Home: React.FC = () => {
@@ -83,7 +84,7 @@ const Home: React.FC = () => {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/25" />
+                <div className="absolute inset-0 bg-black/35" />
 
                 {/* Centered Content */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8">
@@ -141,142 +142,183 @@ const Home: React.FC = () => {
       </section>
 
       {/* Mission Statement Section */}
-      <ScrollAnimation>
-        <section className="py-20 bg-gray-50 dark:bg-neutral-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Our <span className="text-primary-600">Mission</span>
-              </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Empowering underserved children and youth through education, vocational skills training, nourishment, confidence, opportunity, and sustainable futures.
+<ScrollAnimation>
+  <section className="py-20 bg-gray-50 dark:bg-neutral-800">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Our <span className="text-primary-600">Mission</span>
+        </h2>
+
+        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          Our mission is to equip young women, girls, and youth with high-demand skills,
+          practical knowledge, tools, and confidence to build thriving businesses or
+          secure living-wage employment. Through this work, VivaHope Foundation helps
+          young people break the cycle of poverty and build sustainable futures locally
+          and globally.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {[
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828249/ooo_10_cqjwdu.jpg",
+            title: "Community Focus",
+            description:
+              "We work directly with local communities to understand their unique educational needs and challenges.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828216/201A0673-2_o1orww.jpg",
+            title: "Compassionate Care",
+            description:
+              "Our programs prioritize student-centered learning and holistic educational outcomes.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773152938/WhatsApp_Image_2026-03-06_at_8.45.45_AM_fmkco4.jpg",
+            title: "Global Outreach – Ghana",
+            description:
+              "Our work begins in Connecticut and extends to Ghana, creating lasting impact.",
+          },
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ y: -6 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
+            className="group bg-white dark:bg-neutral-900 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          >
+
+            {/* Image */}
+            <div className="relative h-52 overflow-hidden">
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+
+              {/* Soft overlay */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition" />
+            </div>
+
+            {/* Content */}
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                {item.description}
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: Users,
-                  title: "Community Focus",
-                  description:
-                    "We work directly with local communities to understand their unique educational needs and challenges.",
-                },
-                {
-                  icon: Heart,
-                  title: "Compassionate Care",
-                  description:
-                    "Our programs prioritize student-centered learning and holistic educational outcomes.",
-                },
-                {
-                  icon: MapPin,
-                  title: "Global Reach",
-                  description:
-                    "We serve communities locally and internationally, beginning in Ghana and expanding through partnerships and sustainable programs.",
-                },
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 0.97 }}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="text-center p-6 bg-white dark:bg-neutral-900 rounded-xl shadow-md"
-                >
-                  <item.icon className="w-12 h-12 text-primary-500 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {item.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </ScrollAnimation>
+          </motion.div>
+        ))}
+      </div>
 
-      {/* What We Do Section */}
-      <ScrollAnimation>
-        <section className="py-20  dark:bg-neutral-900 ">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
-                What We Do
-              </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Our comprehensive approach addresses key educational challenges
-                in underserved communities both in the US and internationally.
+    </div>
+  </section>
+</ScrollAnimation>
+
+     {/* What We Do Section */}
+<ScrollAnimation>
+  <section className="py-24 dark:bg-neutral-900">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      {/* Heading */}
+      <div className="text-center mb-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-600 mb-4">
+          What We Do
+        </h2>
+
+        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          Comprehensive programs designed to address educational and social challenges
+          in underserved communities.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        {[
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828249/201A0673-2_o1orww.jpg",
+            title: "Feed to Lead (Nutrition & Dining)",
+            description:
+              "Providing hot, nutritious meals through sanitary kitchens and student cafeterias, helping children stay focused, healthy, and ready to learn.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828216/WhatsApp_Image_2026-03-06_at_8.45.45_AM_fmkco4.jpg",
+            title: "Project Dignity (Sanitation & Infrastructure)",
+            description:
+              "Improving learning environments by building safe restroom facilities, teachers’ offices, and renovating classrooms for comfort and dignity.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828248/742A9736-2_odkeih.jpg",
+            title: "The Digital Future (Technology)",
+            description:
+              "Equipping schools with computer labs and internet access to help students develop essential digital and technical skills for the future.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828249/ooo_10_cqjwdu.jpg",
+            title: "Tools for Tomorrow (Supplies)",
+            description:
+              "Providing essential learning supplies such as exercise books, pens, pencils, and nap mats so children can fully participate in class.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828250/ooo_13_ajses3.jpg",
+            title: "Step Into Learning (Uniforms & Footwear)",
+            description:
+              "Supplying school uniforms and proper footwear to promote equality, restore dignity, and ensure children feel confident and included.",
+          },
+          {
+            icon: "https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828250/ooo_11_yidowc.jpg",
+            title: "VivaSkills (Vocational Training)",
+            description:
+              "Offering hands-on vocational training in cosmetics and hairstyling to build practical skills, confidence, and pathways to economic independence.",
+          },
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ y: -8 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.12 }}
+            className="group bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          >
+
+            {/* Image */}
+            <div className="relative h-56 overflow-hidden">
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition" />
+            </div>
+
+            {/* Content */}
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-primary-500 mb-3">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                {item.description}
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8">
-                {[
-                  {
-                      title: "Feed to Lead (Nutrition & Dining)",
-                      description:
-                        "Providing hot, nutritious meals through sanitary kitchens and student cafeterias, helping children stay focused, healthy, and ready to learn.",
-                    },
-                    {
-                      title: "Project Dignity (Sanitation & Infrastructure)",
-                      description:
-                        "Improving learning environments by building safe restroom facilities, teachers’ offices, and renovating classrooms for comfort and dignity.",
-                    },
-                    {
-                      title: "The Digital Future (Technology)",
-                      description:
-                        "Equipping schools with computer labs and internet access to help students develop essential digital and technical skills for the future.",
-                    },
-                    {
-                      title: "Tools for Tomorrow (Supplies)",
-                      description:
-                        "Providing essential learning supplies such as exercise books, pens, pencils, and nap mats so children can fully participate in class.",
-                    },
-                    {
-                      title: "Step Into Learning (Uniforms & Footwear)",
-                      description:
-                        "Supplying school uniforms and proper footwear to promote equality, restore dignity, and ensure children feel confident and included.",
-                    },
-                    {
-                      title: "VivaSkills (Vocational Training)",
-                      description:
-                        "Offering hands-on vocational training in cosmetics and hairstyling to build practical skills, confidence, and pathways to economic independence.",
-                    },
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="flex items-start space-x-4"
-                  >
-                    <CheckCircle className="w-6 h-6 text-primary-500 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        {item.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+          </motion.div>
+        ))}
 
-              <div className="relative">
-                <img
-                  src={whatWeDo}
-                  alt="Image of donators carrying donation items."
-                  className="rounded-2xl shadow-xl w-full h-[520px] object-cover"
-                  width="600"
-                  height="400"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </ScrollAnimation>
+      </div>
+    </div>
+  </section>
+</ScrollAnimation>
 
       {/* Impact Section */}
       <ScrollAnimation>
@@ -324,30 +366,33 @@ const Home: React.FC = () => {
               ))}
             </div>
 
-            {/* Testimonial */}
+            {/* Testimonial Video */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="bg-white dark:bg-neutral-900 rounded-2xl p-8 max-w-4xl mx-auto shadow-lg"
+              className="bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800 rounded-3xl p-10 max-w-4xl mx-auto shadow-2xl border border-gray-100 dark:border-neutral-700"
             >
-              <div className="flex items-center mb-6">
-                <Award className="w-8 h-8 text-primary-500 mr-3" />
-                <h3 className="text-xl font-bold text-primary-500">
-                  Community Impact Story
-                </h3>
+              <div className="mb-8 relative">
+                <div className="absolute -top-4 -left-4 w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full blur-2xl opacity-50"></div>
+                <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-secondary-100 dark:bg-secondary-900/30 rounded-full blur-2xl opacity-50"></div>
+                <iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dnwxx9wx5&public_id=TestimonyVideo_vw4ppx"
+  width="640"
+  height="360"
+  style={{ height: "auto", width: "100%", aspectRatio: "640 / 360" }}
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowFullScreen
+  frameBorder="0"
+></iframe>
               </div>
-              <blockquote className="text-xl text-gray-600 dark:text-gray-300 text-center mb-6 italic">
-                "Thanks to VivaHope Foundation, our children now
-                have access to nutritious meals and essential learning materials. The difference has been life-changing. Attendance has improved, students are more focused, and parents feel hopeful again."
-              </blockquote>
-              <div className="text-center">
-                <div className="font-semibold text-gray-900 dark:text-white">
-                  School Principal
+              <div className="relative z-10">
+                <div className="flex justify-center mb-4">
+                  <div className="h-1 w-24 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full"></div>
                 </div>
-                <div className="text-gray-500 dark:text-gray-400">
-                  Alogboshie Basic School, Ghana
-                </div>
+                <p className="text-xl text-gray-700 dark:text-gray-300 text-center italic font-medium leading-relaxed">
+                  Appreciation from Alogboshie 1 basic  school to Madam Patience Abalo & Vivahope Global Foundation
+                </p>
               </div>
             </motion.div>
           </div>
