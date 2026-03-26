@@ -114,7 +114,7 @@ const OurSolution: React.FC = () => {
       icon: GraduationCap,
       title: "Technology Access",
       description: "Computers, internet, and digital learning resources",
-      image: pic3,
+      image: `https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773828237/742A9610-2_nphyxh.jpg`,
     },
   ];
 
@@ -339,7 +339,7 @@ const OurSolution: React.FC = () => {
                 </div>
                 <div className="relative">
                   <img
-                    src={ceo}
+                    src={`https://res.cloudinary.com/dnwxx9wx5/image/upload/v1773154037/pexels-rdne-6936069_fx6nwk.jpg`}
                     alt="Youth workforce development program participant"
                     className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
                   />
